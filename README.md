@@ -1,9 +1,5 @@
 Real Estate Web Scraper 2026
 
-https://img.shields.io/badge/Node.js-18%2B-green
-https://img.shields.io/badge/License-Commercial-blue
-https://img.shields.io/badge/Platforms-Zillow%2C%20Redfin%2C%20Realtor.com-orange
-
 Advanced multi-platform property data extraction tool built with Node.js and cutting-edge anti-detection technology. Extract real-time listings from major real estate platforms simultaneously.
 
 🚀 Features
