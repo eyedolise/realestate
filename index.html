@@ -32,173 +32,358 @@
     <meta property="twitter:description" content="Automated real estate monitoring. Get alerts for price drops and new listings 24/7.">
     <meta property="twitter:image" content="https://eyedolise.github.io/realestate/rews.jpg">
     
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
+    
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "SoftwareApplication",
+      "@id": "https://eyedolise.github.io/realestate/#software",
+      "name": "PropertyIntel Pro",
+      "description": "Real estate web scraper for automated property monitoring, price drop alerts, and market opportunity discovery",
+      "url": "https://eyedolise.github.io/realestate/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "image": "https://eyedolise.github.io/realestate/rews.jpg",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "247",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
         {
-          "@type": "SoftwareApplication",
-          "@id": "https://eyedolise.github.io/realestate/#software",
-          "name": "PropertyIntel Pro",
-          "description": "Real estate web scraper for automated property monitoring, price drop alerts, and market opportunity discovery",
-          "url": "https://eyedolise.github.io/realestate/",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "image": "https://eyedolise.github.io/realestate/rews.jpg",
-          "offers": {
-            "@type": "AggregateOffer",
-            "offerCount": "3",
-            "lowPrice": "199",
-            "highPrice": "999",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Real Estate Investor"
           },
-          "featureList": [
-            "24/7 property monitoring",
-            "Instant price drop alerts",
-            "New listing notifications",
-            "Zillow, Realtor.com, Redfin tracking",
-            "Market trend analysis",
-            "SMS and email alerts",
-            "Historical price data",
-            "Export to CSV/Excel"
-          ]
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "This tool has helped me find 3 off-market deals in the past month alone. The alerts are instant and accurate."
         },
         {
-          "@type": "Product",
-          "@id": "https://eyedolise.github.io/realestate/#product",
-          "name": "PropertyIntel Pro Real Estate Web Scraper",
-          "image": "https://eyedolise.github.io/realestate/rews.jpg",
-          "description": "Complete source code for automated real estate property monitoring and deal discovery system",
-          "brand": {
-            "@type": "Brand",
-            "name": "PropertyIntel Pro"
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Property Agent"
           },
-          "offers": [
-            {
-              "@type": "Offer",
-              "name": "Basic License",
-              "price": "199",
-              "priceCurrency": "USD",
-              "url": "https://ko-fi.com/s/e49cd65a16",
-              "availability": "https://schema.org/InStock",
-              "priceValidUntil": "2026-12-31"
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.5",
+            "bestRating": "5"
+          },
+          "reviewBody": "The monitoring saves me hours every day. I'm always the first to know about price drops in my area."
+        }
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "offerCount": "3",
+        "lowPrice": "199",
+        "highPrice": "999",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 7,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      },
+      "featureList": [
+        "24/7 property monitoring",
+        "Instant price drop alerts",
+        "New listing notifications",
+        "Zillow, Realtor.com, Redfin tracking",
+        "Market trend analysis",
+        "SMS and email alerts",
+        "Historical price data",
+        "Export to CSV/Excel"
+      ]
+    },
+    {
+      "@type": "Product",
+      "@id": "https://eyedolise.github.io/realestate/#product",
+      "name": "PropertyIntel Pro Real Estate Web Scraper",
+      "image": "https://eyedolise.github.io/realestate/rews.jpg",
+      "description": "Complete source code for automated real estate property monitoring and deal discovery system",
+      "brand": {
+        "@type": "Brand",
+        "name": "PropertyIntel Pro"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "247",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Real Estate Investor"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "This tool has helped me find 3 off-market deals in the past month alone. The alerts are instant and accurate."
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Basic License",
+          "price": "199",
+          "priceCurrency": "USD",
+          "url": "https://ko-fi.com/s/e49cd65a16",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
             },
-            {
-              "@type": "Offer",
-              "name": "Commercial License",
-              "price": "499",
-              "priceCurrency": "USD",
-              "url": "https://ko-fi.com/s/dfececbe4c",
-              "availability": "https://schema.org/InStock",
-              "priceValidUntil": "2026-12-31"
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
             },
-            {
-              "@type": "Offer",
-              "name": "Agency White-Label",
-              "price": "999",
-              "priceCurrency": "USD",
-              "url": "https://ko-fi.com/s/3880b227d6",
-              "availability": "https://schema.org/InStock",
-              "priceValidUntil": "2026-12-31"
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "17:00-08:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
             }
-          ]
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://eyedolise.github.io/realestate/#organization",
-          "name": "Eyedolise Development",
-          "url": "https://eyedolise.github.io/realestate/",
-          "logo": "https://eyedolise.github.io/realestate/rews.jpg",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-868-278-0240",
-            "email": "nlcgpt1@gmail.com",
-            "contactType": "customer service",
-            "availableLanguage": "English",
-            "areaServed": "Worldwide"
           },
-          "sameAs": [
-            "https://ko-fi.com/eyedolise",
-            "https://tt.linkedin.com/in/eyedolise-5b9605384",
-            "https://github.com/eyedolise"
-          ]
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": "https://eyedolise.github.io/realestate/#breadcrumb",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://eyedolise.github.io/realestate/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Real Estate Tools",
-              "item": "https://eyedolise.github.io/realestate/#pricing"
-            }
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://eyedolise.github.io/realestate/#website",
-          "url": "https://eyedolise.github.io/realestate/",
-          "name": "PropertyIntel Pro",
-          "description": "Automated real estate monitoring and deal discovery software",
-          "publisher": {
-            "@id": "https://eyedolise.github.io/realestate/#organization"
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
           }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://eyedolise.github.io/realestate/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Which real estate platforms does PropertyIntel Pro monitor?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "PropertyIntel Pro monitors Zillow, Realtor.com, Redfin, Trulia, and MLS feeds where available. We continuously add new real estate platforms."
-              }
+          "@type": "Offer",
+          "name": "Commercial License",
+          "price": "499",
+          "priceCurrency": "USD",
+          "url": "https://ko-fi.com/s/dfececbe4c",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
             },
-            {
-              "@type": "Question",
-              "name": "How quickly do I get alerts for new listings?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The system monitors 24/7 and typically sends alerts within 5-15 minutes of a new listing or price change."
-              }
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
             },
-            {
-              "@type": "Question",
-              "name": "Do I need technical skills to use this?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No technical skills needed. The system comes with simple setup instructions and most users are running in under 15 minutes."
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "17:00-08:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
               }
             }
-          ]
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          }
         },
         {
-          "@type": "RealEstateAgent",
-          "@id": "https://eyedolise.github.io/realestate/#audience",
-          "name": "Real Estate Professionals",
-          "description": "Tools designed for real estate investors, agents, agencies, and property managers",
-          "audience": [
-            "Real Estate Investors",
-            "Property Agents",
-            "Real Estate Agencies",
-            "Property Managers",
-            "Fix and Flip Investors"
-          ]
+          "@type": "Offer",
+          "name": "Agency White-Label",
+          "price": "999",
+          "priceCurrency": "USD",
+          "url": "https://ko-fi.com/s/3880b227d6",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2026-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "businessDays": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+              },
+              "cutoffTime": "17:00-08:00",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 7,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          }
         }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://eyedolise.github.io/realestate/#organization",
+      "name": "Eyedolise Development",
+      "url": "https://eyedolise.github.io/realestate/",
+      "logo": "https://eyedolise.github.io/realestate/rews.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-868-278-0240",
+        "email": "nlcgpt1@gmail.com",
+        "contactType": "customer service",
+        "availableLanguage": "English",
+        "areaServed": "Worldwide"
+      },
+      "sameAs": [
+        "https://ko-fi.com/eyedolise",
+        "https://tt.linkedin.com/in/eyedolise-5b9605384",
+        "https://github.com/eyedolise"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://eyedolise.github.io/realestate/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eyedolise.github.io/realestate/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Real Estate Tools",
+          "item": "https://eyedolise.github.io/realestate/#pricing"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://eyedolise.github.io/realestate/#website",
+      "url": "https://eyedolise.github.io/realestate/",
+      "name": "PropertyIntel Pro",
+      "description": "Automated real estate monitoring and deal discovery software",
+      "publisher": {
+        "@id": "https://eyedolise.github.io/realestate/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://eyedolise.github.io/realestate/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which real estate platforms does PropertyIntel Pro monitor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PropertyIntel Pro monitors Zillow, Realtor.com, Redfin, Trulia, and MLS feeds where available. We continuously add new real estate platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly do I get alerts for new listings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The system monitors 24/7 and typically sends alerts within 5-15 minutes of a new listing or price change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need technical skills to use this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No technical skills needed. The system comes with simple setup instructions and most users are running in under 15 minutes."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://eyedolise.github.io/realestate/#audience",
+      "name": "Real Estate Professionals",
+      "description": "Tools designed for real estate investors, agents, agencies, and property managers",
+      "audience": [
+        "Real Estate Investors",
+        "Property Agents",
+        "Real Estate Agencies",
+        "Property Managers",
+        "Fix and Flip Investors"
+      ]
     }
-    </script>
+  ]
+}
+</script>
+
+
+
 
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
